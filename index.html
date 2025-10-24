@@ -1,9 +1,224 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Mhamudul Hasan | Portfolio</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: #60a5fa; }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 950px;
+      margin: auto;
+    }
+    h2 {
+      color: #1e3a8a;
+      border-bottom: 2px solid #1e3a8a;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    ul { line-height: 1.8; }
+    .projects, .experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+    footer {
+      text-align: center;
+      background-color: #111827;
+      color: white;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+    }
+    a { color: #1e3a8a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Syed Mhamudul Hasan Photo" />
+    <h1>Syed Mhamudul Hasan</h1>
+    <p>Ph.D. Student in Computer Science | Cybersecurity & AI Researcher</p>
+  
+  </header>
+
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Cybersecurity, Privacy, and Trust in IoT and Cyber-Physical Systems</li>
+      <li>Sustainability and Carbon Emission Analysis in Machine Learning and AI</li>
+      <li>Adversarial Machine Learning and Federated Learning Security</li>
+      <li>Energy-Latency Trade-offs in Secure AI Systems</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Southern Illinois University Carbondale</strong><br/>
+        Doctor of Philosophy (Ph.D.) in Computer Science, GPA 3.88/4.0  (08/2023 – 08/2028 Anticipated)
+      </li>
+      <li><strong>Bangladesh University of Engineering and Technology (BUET)</strong><br/>
+        Bachelor of Science in Computer Science and Engineering, GPA 3.06/4.0  (03/2009 – 02/2015)
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Software Engineer — Dynamic Solution Innovators Ltd</h3>
+        <p>04/2021 – 07/2023, Dhaka, Bangladesh</p>
+        <ul>
+          <li>Provisioned AWS servers with Ansible for DevOps automation.</li>
+          <li>Deployed Kubernetes clusters on private cloud.</li>
+          <li>Developed Spring Boot and Next.js applications.</li>
+          <li>Performed comprehensive code reviews.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Senior Programmer — Computer Network Systems Limited</h3>
+        <p>07/2019 – 03/2021</p>
+        <ul>
+          <li>Developed Java-based Spring Boot applications and mobile APIs.</li>
+          <li>Led two modules in the CPA project team.</li>
+          <li>Integrated custom plugins and procedures per project manager specs.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sr. Software Engineer — Synesis IT Ltd.</h3>
+        <p>08/2018 – 06/2019</p>
+        <ul>
+          <li>Led ERP module team (Angular 6 + Spring Boot + Oracle).</li>
+          <li>Conducted R&D for technical support and development.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Software Engineer — Nascenia IT</h3>
+        <p>12/2016 – 07/2018</p>
+        <ul>
+          <li>Implemented custom chat module in .NET for intranet communication.</li>
+          <li>Analyzed requirements across tech stacks (Ember.js, Vue.js, Laravel, Swift).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>First Sr. Assistant Director — Walton Hi-Tech Industries</h3>
+        <p>04/2015 – 11/2016</p>
+        <ul>
+          <li>Developed ASP.NET Web Form and MVC applications.</li>
+          <li>Implemented Auto Incentive Calculator and managed MSSQL Server DBA tasks.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li><em>Towards Sustainable SecureML: Quantifying Carbon Footprint of Adversarial ML</em>, IEEE GreenNet 2024</li>
+      <li><em>The Environmental Price of Intelligence: Evaluating Social Cost of Carbon in ML</em>, IEEE Sustech 2024</li>
+      <li><em>Context-Aware Spatiotemporal Poisoning Attacks on Wearable Devices</em>, IEEE INFOCOM 2024 Poster</li>
+      <li><em>Evaluating Sustainability and Social Costs of Adversarial Training in ML</em>, IEEE Consumer Electronics Magazine 2024</li>
+      <li><em>WatchOverGPT: Crime Detection via LLM and Wearable Cameras</em>, IEEE COMPSAC 2024</li>
+      <li><em>Sponge Attacks on Sensing AI: Energy-Latency Vulnerabilities and Defense via Model Pruning</em>, IEEE GLOBECOM 2025</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Java, PHP, Python, PL/SQL, Spring Boot, Ruby on Rails, Next.js, AWS, .NET, SQL</li>
+      <li><strong>DevOps:</strong> Linux, Git, CI/CD, Ansible, Microservices, Docker, Kubernetes, Cloud Security</li>
+      <li><strong>Other:</strong> Academic Research, Technical Mentorship, Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>CompTIA Security+ (SY0-601)</li>
+      <li>CompTIA Network+ (N10-008)</li>
+      <li>CompTIA DataSys+ (DS0-001)</li>
+      <li>CompTIA Data+ (DA0-001)</li>
+      <li>CompTIA Cloud Essentials+ (CLO-002)</li>
+      <li>AWS Certified Solutions Architect – Associate (SAA-C02)</li>
+      <li>AWS Certified Developer – Associate (DEV-C01)</li>
+      <li>AWS Certified Cloud Practitioner (CLF-C01)</li>
+      <li>Microsoft Azure Administrator Associate (AZ-104)</li>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+      <li>Kubernetes and Cloud Native Associate (KCNA)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:akash073@gmail.com">akash073@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/syed-mhamudul-hasan/" target="_blank">linkedin.com/in/syed-mhamudul-hasan</a></p>
+    <p>Google Scholar: <a href="https://scholar.google.com/citations?user=-WbnkfsAAAAJ&hl=en" target="_blank">Scholar Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Syed Mhamudul Hasan | Built with HTML & CSS</p>
+  </footer>
+</body>
 </html>
